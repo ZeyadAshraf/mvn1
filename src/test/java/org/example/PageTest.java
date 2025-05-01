@@ -1,20 +1,19 @@
 package org.example;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class LoginTests {
+public class PageTest extends BaseTest {
     private WebDriver driver;
     private LoginPage login;
 
     @BeforeClass
     public void setup() {
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\kalpg\\IdeaProjects\\mvn1\\src\\main\\resources\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "/src/main/resources/msedgedriver.exe");
         driver = new EdgeDriver();
-        driver.get("https://www.saucedemo.com/v1/");
+        driver.get("https://www.saucedemo.com");
         login = new LoginPage(driver);
     }
 

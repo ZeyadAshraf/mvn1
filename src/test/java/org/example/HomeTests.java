@@ -31,14 +31,6 @@ public Object[][] loginData() throws Exception {
 }
 
 
-    @BeforeClass
-    public void setup() {
-        System.setProperty("webdriver.edge.driver", "src/main/resources/msedgedriver.exe");
-        driver = new EdgeDriver();
-        driver.get("https://www.saucedemo.com/v1/");
-        login = new LoginPage(driver);
-        driver.manage().window().maximize();
-    }
 
     @Test()
     public void addToCart() {
