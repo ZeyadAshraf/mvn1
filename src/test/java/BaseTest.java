@@ -17,6 +17,7 @@ public class BaseTest {
         driver.get("https://www.saucedemo.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //To wait all Elements
     }
+
     @AfterClass
     public void tearDownTest(){
         driver.quit();
