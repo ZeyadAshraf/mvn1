@@ -1,5 +1,3 @@
-package org.example;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 

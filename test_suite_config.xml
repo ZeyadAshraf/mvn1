@@ -2,7 +2,7 @@
 <suite name="Test Suite">
     <test name="Home Tests">
         <classes>
-            <class name="org.example.HomeTests"/>
+            <class name="HomeTests"/>
         </classes>
     </test>
 </suite>
