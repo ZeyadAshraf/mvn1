@@ -67,5 +67,3 @@ public class BasePage {
         return elements.size();
     }
 }
-
-
